@@ -2,6 +2,7 @@ package com.ney.taskmanager.infrastructure.repository;
 
 import com.ney.taskmanager.domain.Task;
 import com.ney.taskmanager.domain.TaskId;
+import com.ney.taskmanager.domain.TaskStatus;
 import com.ney.taskmanager.infrastructure.TaskRepository;
 import org.springframework.stereotype.Repository;
 
@@ -30,5 +31,13 @@ public class InMemoryTaskRepository implements TaskRepository {
     @Override
     public void delete(TaskId id) {
         storage.remove(id);
+    }
+
+    @Override
+    public List<Task> findByStatus(TaskStatus status) {
+        return storage.values()
+                .stream()
+                .filter(task -> task.getStatus() == status)
+                .toList();
     }
 }
