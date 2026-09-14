@@ -1,0 +1,96 @@
+= Task Manager API
+Neylon Eduardo
+:toc: left
+:toclevels: 3
+:sectanchors:
+:source-highlighter: highlightjs
+
+== Introduction
+
+The Task Manager API allows clients to create, list, find, update and delete tasks.
+
+== Create task
+
+=== Request
+
+include::{snippets}/create-task/http-request.adoc[]
+
+=== Request fields
+
+include::{snippets}/create-task/request-fields.adoc[]
+
+=== Response
+
+include::{snippets}/create-task/http-response.adoc[]
+
+=== Response fields
+
+include::{snippets}/create-task/response-fields.adoc[]
+
+== List tasks
+
+=== Request
+
+include::{snippets}/list-tasks/http-request.adoc[]
+
+=== Response
+
+include::{snippets}/list-tasks/http-response.adoc[]
+
+=== Response fields
+
+include::{snippets}/list-tasks/response-fields.adoc[]
+
+== Find task by ID
+
+=== Request
+
+include::{snippets}/get-task-by-id/http-request.adoc[]
+
+=== Path parameters
+
+include::{snippets}/get-task-by-id/path-parameters.adoc[]
+
+=== Response
+
+include::{snippets}/get-task-by-id/http-response.adoc[]
+
+=== Response fields
+
+include::{snippets}/get-task-by-id/response-fields.adoc[]
+
+== Update task
+
+=== Request
+
+include::{snippets}/update-task/http-request.adoc[]
+
+=== Path parameters
+
+include::{snippets}/update-task/path-parameters.adoc[]
+
+=== Request fields
+
+include::{snippets}/update-task/request-fields.adoc[]
+
+=== Response
+
+include::{snippets}/update-task/http-response.adoc[]
+
+=== Response fields
+
+include::{snippets}/update-task/response-fields.adoc[]
+
+== Delete task
+
+=== Request
+
+include::{snippets}/delete-task/http-request.adoc[]
+
+=== Path parameters
+
+include::{snippets}/delete-task/path-parameters.adoc[]
+
+=== Response
+
+include::{snippets}/delete-task/http-response.adoc[]
